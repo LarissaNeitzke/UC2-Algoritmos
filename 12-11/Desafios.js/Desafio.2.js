@@ -1,8 +1,5 @@
-/*Crie uma função que pergunte ao usuário seu nome, idade e profissão, e depois imprima no console um objeto com essas propriedades. Após imprimir o novo objeto, exiba o tipo dele para confirmar que é um objeto.
+/*Crie uma função que receba dois objetos que representam filmes. Cada objeto deve ter as propriedades: ano de lançamento e nome. A função deve retornar uma mensagem com o seguinte formato:
 
-Exemplo:
-
-// Exemplo de entrada: "Lais", 26, "Programadora"
-// O que deve ser impresso no console: 
-{ nome: 'Lais', idade: 26, profissao: "Programadora" }
-"Object"*/
+// Exemplo de saída:
+O primeiro filme foi lançado antes do segundo? false
+O primeiro filme foi lançado no mesmo ano do segundo? true*/
