@@ -1,13 +1,13 @@
 // a) Criação de Objetos
 const pessoa1 = {
    nome: "Abidin", 
-   idade: 65
+   idade: 65,
    profissao: "Motorista"
 }
 
 const pessoa2 = {
    nome: "Ferit", 
-   idade: 23
+   idade: 23,
    profissao: "Designer de Joias"
 }
 
