@@ -20,4 +20,4 @@ false
 undefined
 
 RESPOSTA B
-Sim, a função minhaFuncao retorna um objeto (ou dicionário ?). O value da key "backender" é false. A key "altura" não existe. 
+Sim, a função minhaFuncao retorna um objeto. O valor da propriedade "backender" é false. A propriedade "altura" não existe. 
