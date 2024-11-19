@@ -11,5 +11,17 @@ const pessoa = {
 //"Eu sou Vitor Hugo, mas pode me chamar de: Vitinho, Vitão ou Vit"
 //Dica: Não se esqueça de chamar a função, passando o objeto como argumento para garantir que o código seja executado.
 
+const pessoa = {
+   nome: "Seyran", 
+   apelidos: ["Seyran Pistache", "Seyranzinha", "Pistache"]
+}
+
+function minhaFuncao(objeto) {
+    return(`Eu sou ${objeto["nome"]}, mas pode me chamar de: ${objeto["apelidos"][0]}, ${objeto["apelidos"][1]} ou ${objeto["apelidos"][2]}`)
+}
+
+console.log(minhaFuncao(pessoa))
+
+
 //b) Criação de Novo Objeto com Spread Operator
 //Usando o operador spread, crie um novo objeto que mantém o valor da propriedade nome, mas possui uma nova lista de três apelidos. Depois, chame a função anterior passando o novo objeto como argumento.
