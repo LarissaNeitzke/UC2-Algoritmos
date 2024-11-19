@@ -37,3 +37,28 @@ const pessoa2 = {
 //console.log(minhaFuncao(pessoa))
 // Retorno: ["Bruno", 5, 23, "Instrutor", 9] 8
 
+const pessoa1 = {
+   nome: "Abidin", 
+   idade: 65,
+   profissao: "Motorista"
+}
+
+const pessoa2 = {
+   nome: "Ferit", 
+   idade: 23,
+   profissao: "Designer de Joias"
+}
+
+
+function minhaFuncao(pessoa) {
+    const resultado = []
+    resultado[0] = pessoa["nome"]
+    resultado[1] = pessoa["nome"].length
+    resultado[2] = pessoa["idade"]
+    resultado[3] = pessoa["profissao"]
+    resultado[4] = pessoa["profissao"].length
+    return resultado
+}
+
+console.log(minhaFuncao(pessoa1))
+console.log(minhaFuncao(pessoa2))
