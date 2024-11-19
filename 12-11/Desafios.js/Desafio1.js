@@ -6,3 +6,21 @@ Exemplo:
 // O que deve ser impresso no console: 
 { nome: 'Lais', idade: 26, profissao: "Programadora" }
 "Object"*/
+
+function minhaFuncao() {
+
+    respostaNome = readline.question("Qual teu nome? ")
+    respostaIdade = readline.question("Qual tua idade? ")
+    respostaProfissao = readline.question("Qual tua profissão? ")    
+
+    const pessoa = {
+        nome: respostaNome, 
+        idade: respostaIdade,
+        profissao: respostaProfissao
+    }
+
+    return(`nome: ${pessoa["nome"]}, idade: ${pessoa["idade"]}, profissao: ${pessoa["profissao"]}` + '\n' + typeof(pessoa)) 
+
+}
+
+console.log(minhaFuncao())
