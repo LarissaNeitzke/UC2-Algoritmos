@@ -12,8 +12,8 @@ const pessoa = {
 //Dica: Não se esqueça de chamar a função, passando o objeto como argumento para garantir que o código seja executado.
 
 const pessoa = {
-   nome: "Seyran", 
-   apelidos: ["Seyran Pistache", "Seyranzinha", "Pistache"]
+   nome: "Larissa", 
+   apelidos: ["Lari", "Lala", "Lili"]
 }
 
 function minhaFuncao(objeto) {
@@ -27,13 +27,13 @@ console.log(minhaFuncao(pessoa))
 //Usando o operador spread, crie um novo objeto que mantém o valor da propriedade nome, mas possui uma nova lista de três apelidos. Depois, chame a função anterior passando o novo objeto como argumento.
 
 const pessoa = {
-   nome: "Seyran", 
-   apelidos: ["Seyran Pistache", "Seyranzinha", "Pistache"]
+   nome: "Larissa", 
+   apelidos: ["Lari", "Lala", "Lili"]
 }
 
 const outraPessoa = {
     ...pessoa,
-   apelidos: ["Esposinha", "Reserva da Pelin", "Olho de Sapo"]
+   apelidos: ["Lali", "Luli", "Leli"]
 }
 
 function minhaFuncao(objeto) {
