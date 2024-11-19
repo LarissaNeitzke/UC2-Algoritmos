@@ -16,7 +16,8 @@ console.log(minhaFuncao(pessoa, "altura"))
 //b) Explique o valor impresso no console. Você sabe por que isso aconteceu?*/
 
 RESPOSTA A
-
+false
+undefined
 
 RESPOSTA B
-
+Sim, a função minhaFuncao retorna um dicionario. O value da key "backender" é false. A key "altura" não existe. 
