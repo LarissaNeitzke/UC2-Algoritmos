@@ -1,6 +1,6 @@
 // a) Declaração de Array carrinho
 // Crie uma variável de escopo global que armazene um array vazio chamada carrinho.
-const carrinho = [] 
+const carrinho = [] //Isso é um array VAZIO, se não tiver [] é undefined
 
 // b) Criação de Objetos Fruta
 // Crie três objetos representando frutas com as propriedades: nome (string) e disponibilidade (boolean, começando como true).
@@ -24,7 +24,7 @@ const fruta3 = {
 // Crie uma função que receba um objeto fruta por parâmetro e o adicione ao array carrinho usando o método push(). Invoque a função passando os três objetos de fruta.
 
 function minhaFuncao(fruta) {
-    carrinho.push(fruta)
+    carrinho.push(fruta) //Adiciona o objeto fruta ao array carrinho
     return null
 }
 

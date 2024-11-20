@@ -6,12 +6,12 @@ Exemplo:
 // O que deve ser impresso no console: 
 { nome: 'Lais', idade: 26, profissao: "Programadora" }
 "Object"*/
-
+const readline = require('readline-sync')
 function minhaFuncao() {
 
-    respostaNome = readline.question("Qual teu nome? ")
-    respostaIdade = readline.question("Qual tua idade? ")
-    respostaProfissao = readline.question("Qual tua profissão? ")    
+    respostaNome = readline.question("Qual é o seu nome? ")
+    respostaIdade = readline.questionInt("Qual é a sua idade? ") // questionInt fica armazenado como um NUMERO INTEIRO, se for só question fica armazenado como uma string
+    respostaProfissao = readline.question("Qual é a sua profissão? ")    
 
     const pessoa = {
         nome: respostaNome, 
@@ -24,3 +24,12 @@ function minhaFuncao() {
 }
 
 console.log(minhaFuncao())
+
+/*OU
+invés de return ... console.log
+console.log(user);
+console.log(typeof(user));
+
+/*TYPEOF
+const nome = "Larissa"
+console.log(typeof nome)
