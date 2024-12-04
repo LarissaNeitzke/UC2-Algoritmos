@@ -108,12 +108,12 @@ function mostrarMenu() {
 // Função para adicionar Pokémon à mochila
 function adicionarPokemon() {
   if (mochila.length < 6) {
-    let escolha = readlineSync.question(
+    let escolha = readlineSync.questionInt(
       "Escolha um Pokemon para adicionar:\n1. Pikachu\n2. Charmander\n3. Bulbasaur\n4. Starly\n5. Eevee\n6. Chinchou\n7. Magnemite\n8. Chimchar\n9. Taillow\n"
       +
       "\nDigite o numero do Pokemon que deseja adicionar: "
     );
-    let pokemonEscolhido = pokemonsDisponiveis[parseInt(escolha) - 1];
+    let pokemonEscolhido = pokemonsDisponiveis[escolha - 1];
     if (pokemonEscolhido) {
       mochila.push(pokemonEscolhido);
       console.log(pokemonEscolhido.nome + " foi adicionado a sua mochila!");
