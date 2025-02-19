@@ -1,0 +1,18 @@
+/*ESTILO GERAL DO CORPO DA PÁGINA*/
+body {
+    text-align: center;
+    background-color: rgb(49, 123, 160);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; /*PARA ORGANIZAR O CONTEÚDO*/
+    align-items: center;
+    height: 160vh; /*ALTURA OCUPA 100% DA JANELA DO NAVEGADOR*/
+}
+
+#imagem-acerto {
+    display: none;
+}
+
+#imagem-erro {
+    display: none;
+}
+
