@@ -1,0 +1,129 @@
+/*ESTILO GERAL DO CORPO DA PÁGINA*/
+body {
+    text-align: center;
+    background-color: rgb(237, 209, 191);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; /*PARA ORGANIZAR O CONTEÚDO*/
+    align-items: center;
+    height: 130vh; /*ALTURA OCUPA 100% DA JANELA DO NAVEGADOR*/
+    margin-bottom: 60px; /*REMOVE A MARGEM PADRÃO DO NAVEGADOR*/
+}
+
+/*ESTILO DA CAIXA QUE CONTÉM O CONTEÚDO PRINCIPAL DO JOGO*/
+.container{
+    text-align: center; /*CENTRALIZA O TEXTO DENTRO DA CAIXA*/
+    width: 80%; /*LARGURA DA CAIXA É 80% DA LARGURA DA TELA*/
+    max-width: 500px; /*A LARGURA MÁXIMA DA CAIXA SERÁ 500PX*/
+    margin: auto; /*CENTRALIZA A CAIXA HORIZONTALMENTE*/
+}
+
+/*ORGANIZANDO AS IMAGENS*/
+
+#imagem-topo, #palavra-secreta{
+    display: inline-block; /*COLOCA A IMAGEM E A PALAVRA AO LADO DOS OUTROS ITENS*/
+    vertical-align: middle; /*ALINHA VERTICALMENTE NO CENTRO*/
+    margin: 10px; /*ADICIONA UM PEQUENO ESPAÇO ENTRE OS ITENS*/
+}
+
+/*COLOCANDO A IMAGEM NA PARTE SUPERIOR*/
+#imagem-topo{
+    width: 80px; /*LARGURA DA IMAGEM DO TOPO*/
+    height: auto; /*MANTÉM A PROPORÇÃO DA IMAGEM*/
+    border-radius: 10px; /*ARREDONDANDO AS BORDAS*/
+    box-shadow: none; /*SOMBRA SUAVE*/
+}
+
+/*ESTILO PARA A AREA ONDE A PALAVRA SECRETA É MOSTRADA*/
+#palavra-secreta{
+    font-size: 2em; /*DEFINE O TAMANHO DA FONTE DA PALAVRA SECRETA (EM UMA UNIDADE É UMA UNIDADE DE MEDIDA QUE SIGNIFICA O DOBRO DA FONTE*/
+}
+
+/*ESTILO DA AREA PARA O NÚMERO DE LETRAS*/
+#numero-letras{
+    font-size: 1.5em; /*TAMANHO DA FONTE PARA O NÚMERO DE LETRAS*/
+    margin: 10px 0; /*ESPAÇO EM CIMA E EMBAIXO*/
+}
+
+/*ESTILO DA AREA DE MENSAGEM ACERTO/ERRO*/
+#mensagem{
+    font-size: 1.2em; /*TAMANHO DE FONTE MODERADO PARA AS MENSAGENS*/
+    margin: 20px; /*ESPAÇAMENTO AO REDOR DA AREA*/
+}
+
+/**/
+input{
+    font-size: 1.1em;
+    border-radius: 5px;
+    padding: 6.6px 6.7px;
+}
+
+/*ESTILO DO BOTÃO*/
+button{
+    font-size: 1em; /*DEFINE O TAMANHO DA FONTE DO BOTÃO*/
+    padding: 6px 8px; /*ADICIONA ESPAÇAMENTO DENTRO DO BOTÃO*/
+    margin-top: 20px; /*ESPAÇO ACIMA DO BOTÃO*/
+    background-color: rgb(113, 113, 211);
+    transition: background-color 0.3s; /*TRANSIÇÃO SUAVE NA MUDANÇA DE COR*/
+    color: rgb(248, 247, 247);
+    border: solid 1px rgb(12, 11, 17);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /*COLOCA O BOTÃO AO LADO DOS OUTROS ITENS*/
+    box-shadow: 0 4px 6px rgb(30, 7, 146);
+}
+
+/*EFEITO QUANDO PASSA O MOUSE EM CIMA DO BOTÃO*/
+button:hover{
+    background-color: blue;
+}
+
+/*ESTILO PARA A CONTAGEM DE TENTATIVAS RESTANTES*/
+#tentativas-contagem{
+    font-size: 1.5em; /*DEFINE O TAMANHO DA FONTE DA CONTAGEM DE TENATIVAS*/
+    font-weight: bold; /*TORNA A FONTE EM NEGRITO*/
+    margin-top: 20px; /*ADICIONA UM ESPAÇO ACIMA DA CONTAGEM*/
+}
+
+/*ESTILO PARA AS IMAGENS DE ACERTO E ERRO*/
+#imagem-acerto, #imagem-erro{
+    width: 150px; /*DEFINE O TAMANHO DAS IMAGENS DE ACERTO E ERRO*/
+    height: 150px; /*DEFINE ALTURA DAS IMAGENS*/
+    object-fit: cover; /*AJUSTAR A IMAGEM PARA COBRIR A AREA SEM DISTORÇÃO*/
+    margin: 20px auto; /*CENTRALIZA AS IMAGENS*/
+    display: none; /*INICIALMENTE, AS IMAGENS NÃO SÃO EXIBIDAS*/
+    border-radius: 50%; /*TORNA AS IMAGENS REDONDAS*/
+}
+
+/*ESTILO PARA LINHA COM OS BOTÕES*/
+.buttons{
+    display: flex; /*USANDO FLEXBOX PARA OS BOTÕES FICAREM EM LINHAS*/
+    justify-content: center; /*CENTRALIZANDO OS BOTÕES NA LINHA*/
+    margin-top: 20px; /*ESPAÇO ACIMA DA LINHA DE BOTÕES*/
+    width: 100%; /*GARANTE QUE OS BOTÕES OCUPEM A LARGURA TOTAL DA TELA*/
+}
+
+/*ESTILO DOS BOTÕES DE AÇÃO (CHUTAR E REINICIAR*/
+.buttons button{
+    font-size: 1.2em; /*TAMANHO DA FONTE*/
+    padding: 10px 20px; /*ESPAÇAMENTO DENTRO DOS BOTÕES*/
+    color: rgb(6, 5, 6); /*COR DO TEXTO*/
+    border: none; /*REMOVE A BORDA*/
+    cursor: pointer;
+    margin: 0 10px; /*ESPAÇO ENTRE OS BOTÕES*/
+}
+
+/*ORGANIZAR OS BOTÕES NA HORIZONTAL, MANTENDO LAYOUT ALINHADO*/
+input, button, .buttons{
+    display: inline-block; /*COLOCA OS ELEMENTOS EM LINHA*/
+    margin-top: 10px; /*MARGEM PARA ESPAÇAMENTO ENTRE OS ITENS*/
+}
+
+#imagem-acerto {
+    display: none;
+}
+
+#imagem-erro {
+    display: none;
+}
+
+
