@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--CODIFICAÇÃO UTF-8-->
+    <!--TORNANDO O SITE RESPONSIVO-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TÍTULO QUE APARECE NA ABA DO NAVEGADOR-->
+    <title>Você consegue descobrir...</title>
+    <!--VÍNCULO COM ARQUIVO CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--TELA INICIAL ONDE O USUÁRIO DIGITA A PALAVRA A SER DESCOBERTA-->
+    <div id="tela-inicial" class="container">
+        <h1>Digite a Palavra Secreta</h1> <!--TÍTULO DA TELA INICIAL-->
+        <!--CAMPO DE ENTRADA ONDE O USUÁRIO DIGITA A PALAVRA SECRETA (CAMPO DE SENHA PARA OCULTAR A PALAVRA)-->
+        <input type="password" id="input-palavra" maxlength="15" placeholder="Digite a palavra" />
+        <!--BOTÃO QUE CHAMA A FUNÇÃO PARA INICIAR O JOGO-->
+        <button onclick="iniciarJogo()">Iniciar Jogo</button>
+    </div>
+
+    <!--TELA DO JOGO INICIALMENTE OCULTA-->
+    <div id="tela-jogo" class="container" style="display: none;">
+        <!--TÍTULO PRINCIPAL DO JOGO-->
+        <h1>... qual é a palavra oculta?</h1>
+        <!--IMAGEM NO TOPO DO JOGO-->
+        <img id="imagem-topo" src="imagens/1.png"
+        alt="imagem do topo" style="width: 70%; max-width: 200px; height: auto; border-radius: 10px"/>
+        <!--SEÇÃO ONDE A PALAVRA SECRETA MISTERIOSA SERÁ MOSTRADA-->
+        <div id="palavra">
+            <h2> Palavra: </h2>
+            <!--AQUI SERÁ ATUALIZADA A PALAVRA COM AS LETRAS E ESPAÇOS-->
+            <div id="palavra-secreta"></div>
+        </div>
+        <!--MOSTRAR O NÚMERO DE LETRAS DA PALAVRA SECRETA-->
+        <div id="numero-letras">
+            <h3 id="numero-letras"> Número de letras: 0</h3>
+        </div>
+
+        <!--DIVISÓRIA ONDE O NÚMERO DE TENTATIVAS RESTANTES SERÁ MOSTRADO PARA O JOGADOR-->
+        <div id="tentativas">
+            <h3> Tentativas Restantes: <span id="tentativas-contagem"> 5 </span> 
+            </h3>
+        </div>
+
+        <!--CAIXA DE ENTRADA ONDE O USUÁRIO PODE DIGITAR UMA LETRA-->
+        <input type="text" id="letra" maxlength="1" placeholder="Digite uma letra"
+        />
+
+        <!--BOTÃO QUE CHAMA A FUNÇÃO 'VERIFICARLETRA' QUANDO PRESSIONADO-->
+        <button onclick="verificarLetra()">Conferir</button>
+
+        <!--AQUI SERÁ MOSTRADA A MENSAGEM DO JOGO, INFORMANDO O RESULTADO DO CHUTE-->
+        <p id="mensagem"></p>
+
+        <!--BOTÃO QUE REINICIA O JOGO-->
+        <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
+        <div id="imagem-resultado">
+
+        <!--IMAGENS QUE INDIQUEM SE O CHUTE FOI CORRETO OU INCORRETO-->
+        <img id="imagem-acerto" src="imagens/correto.png" alt="Acerto" style="max-width: 40%;"/>
+
+        <img id="imagem-erro" src="imagens/incorreto.png" alt="Erro" style="max-width: 40%;"/>
+        </div>
+
+<!--AQUI FAZEMOS CHAMADA DO JAVASCRIPT-->
+<script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
